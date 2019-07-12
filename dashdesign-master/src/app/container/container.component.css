@@ -1,10 +1,11 @@
 .w3-red, .w3-hover-red:hover {
   height: 8%;
   color: #fff!important;
-  background-color: silver!important;
+  background-color:#765E6F!important;
 }
 .w3-container, .w3-panel {
   padding: 0.01em 16px;
+  margin-left: 7%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -172,11 +173,11 @@ html {
 
 .w3-red[_ngcontent-oui-c3], .w3-hover-red[_ngcontent-oui-c3]:hover {
   color: #fff!important;
-  background-color:silver!important;
+  background-color:#765E6F!important;
 }
 .w3-red, .w3-hover-red:hover {
   color: #fff!important;
-  background-color:silver!important;
+  background-color:#765E6F!important;
 }
 .w3-container, .w3-panel {
   padding: 0.01em 16px;
@@ -353,15 +354,15 @@ h5 {
 }
 .w3-red[_ngcontent-hph-c3], .w3-hover-red[_ngcontent-hph-c3]:hover {
   color: #fff!important;
-  background-color:silver!important;
+  background-color:#436364  !important;
 }
 .w3-red[_ngcontent-hph-c3], .w3-hover-red[_ngcontent-hph-c3]:hover {
   color: #fff!important;
-  background-color:silver!important;
+  background-color:#436364  !important;
 }
 .w3-red, .w3-hover-red:hover {
   color: #fff!important;
-  background-color:silver!important;
+  background-color:#436364  !important;
 }
 html, body {
   font-family: Verdana,sans-serif;
