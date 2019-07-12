@@ -9,8 +9,7 @@ export class ContainerComponent implements OnInit {
   myChart;
   myChart1;
   constructor() { }
-
-  @HostBinding('class') classes = 'col';
+  @HostBinding('class') classes = 'col col-xl-8 col-lg-10';
 
   ngOnInit() {
       var canvasP = <HTMLCanvasElement> document.getElementById("pieChart");
