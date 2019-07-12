@@ -1,0 +1,42 @@
+import { Component, OnInit, HostBinding } from '@angular/core';
+import {Chart} from  'chart.js';
+@Component({
+  selector: 'app-container',
+  templateUrl: './container.component.html',
+  styleUrls: ['./container.component.css']
+})
+export class ContainerComponent implements OnInit {
+  myChart;
+  myChart1;
+  constructor() { }
+
+  @HostBinding('class') classes = 'col';
+
+  ngOnInit() {
+      var canvasP = <HTMLCanvasElement> document.getElementById("pieChart");
+
+      var ctxP = canvasP.getContext("2d");
+      this.myChart = new  Chart(ctxP, {
+      type: 'bar',
+      data: {
+      labels: ["phani","pabu","xyz","abc","ddd"],
+      datasets: [{
+      data: [50,70,4,6,8],
+      backgroundColor: ["#64B5F6", "#FFD54F", "#2196F3", "#FFC107", "#1976D2", "#FFA000", "#0D47A1"],
+      hoverBackgroundColor: ["#B2EBF2", "#FFCCBC", "#4DD0E1", "#FF8A65", "#00BCD4", "#FF5722", "#0097A7"]
+      }]
+      },
+      options:
+      {
+
+          legend: {
+          display: true,
+          position: "right"
+        }
+
+      }
+      });
+
+        }
+
+}

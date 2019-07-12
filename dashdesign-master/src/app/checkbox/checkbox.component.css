@@ -1,0 +1,30 @@
+.customCheckbox{
+  display: none;
+}
+.checkboxLabel{
+  cursor: pointer;
+}
+.customCheckbox + span{
+  padding-left: 30px;
+  position: relative
+}
+.customCheckbox + span:before{
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: #f3f3f3;
+  position:absolute;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  left:0
+}
+.customCheckbox:checked + span:before{
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: #d84e55;
+  position:absolute;
+  border: 1px solid #d84e55;
+  border-radius: 3px;
+  left:0
+}
