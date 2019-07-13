@@ -18,10 +18,10 @@ export class ContainerComponent implements OnInit {
       this.myChart = new  Chart(ctxP, {
       type: 'bar',
       data: {
-      labels: ["phani","pabu","xyz","abc","ddd","eee","fff"],
+      labels: ["phani","pabu","xyz","abc","ddd","eee","fff","ggg"],
       datasets: [{
-      data: [50,70,4,6,8,7,70],
-       backgroundColor: ["#008080", "#008080", "#008080", "#008080", "#008080", "#008080", "#008080"]
+      data: [50,70,4,6,8,7,70,45],
+       backgroundColor: ["#008080", "#008080", "#008080", "#008080", "#008080", "#008080", "#008080","#008080"]
       // hoverBackgroundColor: ["#B2EBF2", "#FFCCBC", "#4DD0E1", "#FF8A65", "#00BCD4", "#FF5722", "#0097A7"]
       }]
       },
