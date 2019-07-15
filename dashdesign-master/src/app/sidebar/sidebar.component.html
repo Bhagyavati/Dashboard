@@ -1,21 +1,36 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <div class="form-group sidebarborder">
-  <label for="status" class="filter-titles f-12 f-bold"  id="status">Status</label>
+    <button class="collapsible">Status <i class="fa fa-caret-down" style="font-size:22px; padding-left: 105px;"></i></button>
+    <div class="content">
+  <!-- <label for="status" class="filter-titles f-12 f-bold"  id="status">Status</label> -->
   <input type="text" class="form-control" id="search"
     placeholder="Search here. . . " (focus)="showModal()" >
+  </div>
 </div>
 <div class="form-group sidebarborder">
-  <label for="status" class="filter-titles f-12 f-bold"  id="status">Name</label>
+  <button class="collapsible">Name <i class="fa fa-caret-down" style="font-size:22px; padding-left: 109px;"></i></button>
+  <div class="content">
+  <!-- <label for="status" class="filter-titles f-12 f-bold"  id="status">Name</label> -->
   <input type="text" class="form-control" id="search"
     placeholder="Search here. . . " (focus)="showModal()" >
+  </div>
 </div>
 <div class="form-group sidebarborder">
-    <label for="status" class="filter-titles f-12 f-bold" id="status">From</label>
-  <app-datepicker></app-datepicker>
+  <button class="collapsible">Date <i class="fa fa-caret-down" style="font-size:22px; padding-left: 116px;"></i></button>
+  <div class="content">
+    <div class="form-group ">
+      <label for="status" class="filter-titles f-12 f-bold" id="status">From</label>
+      <app-datepicker></app-datepicker>
+    </div>
+    <div class="form-group ">
+      <label for="status" class="filter-titles f-12 f-bold"  id="status">To</label>
+      <app-datepicker></app-datepicker>
+    </div>
+  </div>
 </div>
-<div class="form-group sidebarborder">
-    <label for="status" class="filter-titles f-12 f-bold"  id="status">To</label>
-  <app-datepicker></app-datepicker>
-</div>
+
+
 <app-modal *ngIf="showIt"
           [modalTitle]="modalTitle"
           (close)="hideModal($event)"></app-modal>
