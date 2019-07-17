@@ -31,6 +31,7 @@
 }
 .dashmodal .content{
   flex-grow: 3;
+  overflow-y: auto;
 }
 .dashmodal .footer{
   text-align: right;
