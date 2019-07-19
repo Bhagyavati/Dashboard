@@ -11,6 +11,16 @@ export class SidebarComponent implements OnInit {
   showIt = false;
   @HostBinding('class') classes = 'col col-xl-2 col-lg-3';
   modalTitle="Search"
+  modalData=[];
+  modalData1=[{
+    "group":"A",
+    "data":["Antofhills","Airoli","Andheri"]
+  }];
+
+  modalData2=[{
+    "group":"Companies",
+    "data":["Google","Facebook","Microsoft"]
+  }];
   ngOnInit() {
 
 
@@ -31,9 +41,13 @@ for (i = 0; i < coll.length; i++) {
 
   }
 
-  showModal() {
-      this.showIt = true;
+  showModal(flag) {
+    this.modalData=flag?this.modalData1:this.modalData2;
+    this.showIt = true;
   }
+//   showModal1() {
+//     this.showIt1= true;
+// }
   hideModal(newName: string) {
       this.showIt = false;
   }

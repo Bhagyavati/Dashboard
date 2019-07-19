@@ -11,54 +11,21 @@
         </div>
       </div>
       <div class="row" style="padding-top:15px">
-        <div class="col col-lg-3">
+        <div class="col col-lg-3" *ngFor="let item of modalData">
           <div style="font-weight:bold;color:#d84e55;margin-bottom:8px">
-            A
+            {{item.group}}
           </div>
-          <div>
+          <div *ngFor="let itemValue of item.data ">
             <app-checkbox
-              [checkboxId]="checkboxData"
-              [checkboxName]="checkboxData"
-              [checkboxLabel]="checkboxData"
-              [checkboxValue]="checkboxData"
+              [checkboxId]="itemValue"
+              [checkboxName]="itemValue"
+              [checkboxLabel]="itemValue"
+              [checkboxValue]="itemValue"
               ></app-checkbox>
-              <br/>
-              <app-checkbox
-              [checkboxId]="checkboxData1"
-              [checkboxName]="checkboxData1"
-              [checkboxLabel]="checkboxData1"
-              [checkboxValue]="checkboxData1"
-              ></app-checkbox>
+
           </div>
         </div>
-        <div class="col col-lg-3">
-            <div style="font-weight:bold;color:#d84e55;margin-bottom:8px">
-              B
-            </div>
-            <div>
-              <app-checkbox
-                [checkboxId]="checkboxData2"
-                [checkboxName]="checkboxData2"
-                [checkboxLabel]="checkboxData2"
-                [checkboxValue]="checkboxData2"
-                ></app-checkbox>
-                <br/>
-                <app-checkbox
-                [checkboxId]="checkboxData3"
-                [checkboxName]="checkboxData3"
-                [checkboxLabel]="checkboxData3"
-                [checkboxValue]="checkboxData3"
-                ></app-checkbox>
-                <br/>
-                <app-checkbox
-                [checkboxId]="checkboxData4"
-                [checkboxName]="checkboxData4"
-                [checkboxLabel]="checkboxData4"
-                [checkboxValue]="checkboxData4"
-                ></app-checkbox>
-            </div>
-          </div>
-      </div>
+       </div>
     </div>
     <div class="footer">
       <button class="btn btn-light" type="button" (click)="hideModal()">Cancel</button>

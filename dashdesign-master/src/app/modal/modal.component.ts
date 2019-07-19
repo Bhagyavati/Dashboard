@@ -11,19 +11,15 @@ export class ModalComponent implements OnInit {
   @Output() close = new EventEmitter<string>();
 
   @Input() modalTitle:string = "";
+  @Input() modalData = [];
 
-  checkboxData = "Andheri" ;
-  checkboxData1 = "Aundh" ;
-  checkboxData2 = "Banglore" ;
-  checkboxData3 = "Bellendur" ;
-  checkboxData4 = "Bhanshankari" ;
 
 
   ngOnInit() {
   }
 
   showModal() {
-        this.close.emit();
+       // this.close.emit();
   }
 
   hideModal() {

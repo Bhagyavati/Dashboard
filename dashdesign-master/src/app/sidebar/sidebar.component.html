@@ -5,7 +5,7 @@
     <div class="content">
   <!-- <label for="status" class="filter-titles f-12 f-bold"  id="status">Status</label> -->
   <input type="text" class="form-control" id="search"
-    placeholder="Search here. . . " (focus)="showModal()" >
+    placeholder="Search here. . . " (focus)="showModal(true)" >
   </div>
 </div>
 <div class="form-group sidebarborder">
@@ -13,7 +13,7 @@
   <div class="content">
   <!-- <label for="status" class="filter-titles f-12 f-bold"  id="status">Name</label> -->
   <input type="text" class="form-control" id="search"
-    placeholder="Search here. . . " (focus)="showModal()" >
+    placeholder="Search here. . . " (focus)="showModal(false)" >
   </div>
 </div>
 <div class="form-group sidebarborder">
@@ -33,4 +33,9 @@
 
 <app-modal *ngIf="showIt"
           [modalTitle]="modalTitle"
+          [modalData]="modalData"
           (close)="hideModal($event)"></app-modal>
+
+<!-- <app-modal *ngIf="showIt1"
+          [modalTitle]="modalTitle1"
+          (close)="hideModal($event)"></app-modal> -->
